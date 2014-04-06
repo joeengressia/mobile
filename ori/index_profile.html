@@ -1,0 +1,430 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Virtual Office - MLM Clients</title>
+	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="css/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="css/images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="css/images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="css/images/apple-touch-icon-57-precomposed.png">
+
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>    
+
+    <!-- stylesheet library -->
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.2.css" />
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/custom.css" />    	
+
+	<!-- javascript library -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.2.js"></script>
+
+	<!-- javascript plugin -->
+	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+	<script type='text/javascript' src="js/owl.carousel.min.js"></script>
+	<script type='text/javascript' src="js/script-lib.js"></script>	
+	
+</head>
+
+<body>
+	<!-- Splash screen - ->
+  	<div id="splash"> 
+	   <img id="splash-bg" src="images/splash/splashscreen_bg.jpg" alt="splash image"/>
+	   <div class="splash-brand"><img id="splash-title" src="images/splash/logo.png" alt="splash title" /></div>
+	</div> 
+  	<!-- end splash screen -->
+
+	<div data-role="panel" id="mypanel">
+		<!-- navigation menu -->
+		<nav id="menu">
+			<ul>
+				<li> <!--class="Selected"-->
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-gear"></i> Menu Utama</a>
+					<ul>
+						<li><a href="index_profile.html" data-transition="pop">Profile</a></li>
+						<li><a href="index_testimoni.html" data-transition="pop">Testimonial</a></li>
+						<li><a href="index_password.html" data-transition="pop">Ubah Password</a></li>
+						<li><a href="index_register.html" data-transition="pop">Registrasi</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-grid"></i>Jaringan</a>
+					<ul>
+						<li><a href="index_infojaringan.html" data-transition="pop">Status Jaringan</a></li>
+						<li><a href="index_geneologi.html" data-transition="pop">Geneologi</a></li>
+						<li><a href="index_sponsorisasi.html" data-transition="pop">Sponsorisasi</a></li>
+						<li><a href="index_reportpoin.html" data-transition="pop">Report Poin</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-star"></i>Komisi</a>
+					<ul>
+						<li><a href="index_statuskomisi.html" data-transition="pop">Status Komisi</a></li>
+						<li><a href="index_statemenkomisi.html" data-transition="pop">Statemen Komisi</a></li>
+						<li><a href="index_historykomisi.html" data-transition="pop">Histori Komisi</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-shop"></i>Repeat Order</a>
+					<ul>
+						<li><a href="index_ro_formulir.html" data-transition="pop">Formulir RO</a></li>
+						<li><a href="index_ro_bonus.html" data-transition="pop">Bonus RO</a></li>
+						<li><a href="index_ro_omsetgroup.html" data-transition="pop">Omset Grup</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-mail"></i>Message</a>
+					<ul>
+						<li><a href="index_msg_sent.html" data-transition="pop">Kirim Pesan</a></li>
+						<li><a href="index_msg_inbox.html" data-transition="pop">Inbox</a></li>
+					</ul>
+				</li>																	
+			</ul>
+		</nav>		
+		<!-- end navigation menu -->		    
+	</div>  	
+
+	<div data-dom-cache="false" data-role="page" data-theme="b" id="demo-page" class="my-page">
+		<header data-role="header" class="ui-alt-icon">
+			<a href="index.html" data-rel="back" data-ajax="false" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all" id="menu-button">Beranda</a>
+			<h1>MLM Basic Apps</h1>
+		</header>
+
+	    <div data-role="header" class="container brand-header">
+			<div class="branding">
+				<a href="#"><img src="images/logo-milagros.png"></a>
+			</div>    		
+	    </div>		
+
+	    <!--<div role="main" class="ui-content">-->
+	    <div data-role="content" data-theme="b" class="minus-shadow">
+			<article class="container">
+				<h2 class="title">Profile</h2>
+
+				<form method="get" action"#">
+					<div id="form-step-1">
+						<table class="table-common" width="100%" border="0" cellspacing="0" cellpadding="5">
+							<tbody>
+								<tr><th>Data Pribadi</th></tr>
+								<tr valign="top">
+									<td>	
+										<div class="ui-field-contain">
+										    <label for="nama">Nama Lengkap <font color="#dd0000" size="4">*</font></label>
+											<input class="input" name="nama" id="nama" size="30" value="MILAGROS" maxlength="50" type="text" readonly="">
+										</div>
+
+										<div class="ui-field-contain">
+						    				<label for="email">Email <font color="#dd0000" size="4">*</font></label>
+						    				<input class="input" name="email" id="email" size="50" value="gs.grahasolution@gmail.com" maxlength="50" type="text">
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="member_country_id">Negara <font color="#dd0000" size="4">*</font></label>
+											<select name="member_country_id" id="member_country_id">
+												<option value="">== Negara ==</option>
+							                    <option value="96" selected="">Indonesia (IDN)</option>
+							                    <option value="211">Timor-Leste (TLS)</option>		
+							                </select>					    				
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="propinsi">Propinsi <font color="#dd0000" size="4">*</font></label>
+											<select name="propinsi" id="propinsi"> 
+												<option value="" selected="">== Pilih Provinsi ==</option>
+												<option value="1">Nanggroe Aceh Darussalam</option>
+												<option value="2">Sumatera Utara</option>
+												<option value="3">Sumatera Barat</option>
+												<option value="4">Bengkulu</option>
+												<option value="5">Riau</option>
+												<option value="6">Kepulauan Riau</option>
+												<option value="7">Jambi</option>
+												<option value="8">Sumatera Selatan</option>
+												<option value="9">Lampung</option>
+												<option value="10">Kepulauan Bangka Belitung</option>
+												<option value="11">DKI Jakarta</option>
+												<option value="12">Jawa Barat</option>
+												<option value="13">Banten</option>
+												<option value="14">Jawa Tengah</option>
+												<option value="15">DI Yogyakarta</option>
+												<option value="16">Jawa Timur</option>
+												<option value="17">Kalimantan Barat</option>
+												<option value="18">Kalimantan Tengah</option>
+												<option value="19">Kalimantan Selatan</option>
+												<option value="20">Kalimantan Timur</option>
+												<option value="21">Bali</option>
+												<option value="22">Nusa Tenggara Barat</option>
+												<option value="23">Nusa Tenggara Timur</option>
+												<option value="24">Sulawesi Barat</option>
+												<option value="25">Sulawesi Utara</option>
+												<option value="26">Sulawesi Tengah</option>
+												<option value="27">Sulawesi Selatan</option>
+												<option value="28">Sulawesi Tenggara</option>
+												<option value="29">Gorontalo</option>
+												<option value="30">Maluku</option>
+												<option value="31">Maluku Utara</option>
+												<option value="32">Papua</option>
+												<option value="33">Papua Barat</option>
+												<option value="531">Lain-lain</option>
+											</select>					    				
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="kabupaten">Kota / Kabupaten <font color="#dd0000" size="4">*</font></label>
+											<select name="kabupaten" id="kabupaten"> 
+												<option value="" selected="">== Pilih Kota/ Kabupaten ==</option>
+												<option value="429">Kabupaten Bantaeng</option>
+												<option value="430">Kabupaten Barru</option>
+												<option value="431">Kabupaten Bone</option>
+												<option value="432">Kabupaten Bulukumba</option>
+												<option value="433">Kabupaten Enrekang</option>
+												<option value="434">Kabupaten Gowa</option>
+												<option value="435">Kabupaten Jeneponto</option>
+												<option value="436">Kabupaten Kepulauan Selayar</option>
+												<option value="437">Kabupaten Luwu</option>
+												<option value="438">Kabupaten Luwu Timur</option>
+												<option value="439">Kabupaten Luwu Utara</option>
+												<option value="440">Kabupaten Maros</option>
+												<option value="441">Kabupaten Pangkajene dan Kepulauan</option>
+												<option value="442">Kabupaten Pinrang</option>
+												<option value="443">Kabupaten Sidenreng Rappang</option>
+												<option value="444">Kabupaten Sinjai</option>
+												<option value="445">Kabupaten Soppeng</option>
+												<option value="446">Kabupaten Takalar</option>
+												<option value="447">Kabupaten Tana Toraja</option>
+												<option value="448">Kabupaten Toraja Utara</option>
+												<option value="449">Kabupaten Wajo</option>
+												<option value="450">Kota Makassar</option>
+												<option value="451">Kota Palopo</option>
+												<option value="452">Kota Parepare</option>
+											</select>					    				
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="alamat">Alamat <font color="#dd0000" size="4">*</font></label>
+											<input class="input" name="alamat" id="alamat" size="50" value="Jl. Pandang Raya Ruko Saphire III No.15 Panakukang" maxlength="50" type="text">					    				
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="kodepos">Kode Pos <font color="#dd0000" size="4">*</font></label>
+											<input class="input" name="kodepos" id="kodepos" size="5" value="00000" maxlength="5" type="text">
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="tgllahir">Tanggal Lahir <font color="#dd0000" size="4">*</font></label>
+											<input id="tanggal" name="tgllahir" id="tgllahir" size="30" value="0000-00-00" type="text">
+						    			</div>
+
+										<div class="ui-field-contain">
+										    <fieldset data-role="controlgroup">
+										        <legend>Jenis Kelamin <font color="#dd0000" size="4">*</font></legend>
+										        <input type="radio" name="radio-choice-v-1" id="radio-choice-v-1a" value="male">
+										        <label for="radio-choice-v-1a">Laki - laki</label>
+										        <input type="radio" name="radio-choice-v-1" id="radio-choice-v-1b" value="female">
+										        <label for="radio-choice-v-1b">Perempuan</label>
+										    </fieldset>
+										</div>					    			
+
+										<div class="ui-field-contain">
+										    <fieldset data-role="controlgroup">
+										        <legend>Jenis Identitas <font color="#dd0000" size="4">*</font></legend>
+										        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="male">
+										        <label for="radio-choice-v-2a">KTP</label>
+										        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="female">
+										        <label for="radio-choice-v-2b">SIM</label>
+										    </fieldset><br>
+
+											<label for="no_identitas">No. Identitas <font color="#dd0000" size="4">*</font></label>
+											<input class="input" name="no_identitas" id="no_identitas" size="30" value="00000000000" maxlength="20" type="text">	
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="notelp">No. Telepon</label>
+											<input class="input" name="notelp" id="notelp" size="30" value="(0411) 434 847" maxlength="20" type="text">	
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="nohp">No. Handphone <font color="#dd0000" size="4">*</font></label>
+											<input class="input" name="nohp" id="nohp" size="30" value="081236000064" maxlength="20" type="text">
+						    			</div>
+
+										<div class="ui-field-contain">
+						    				<label for="image">Foto</label>
+						    				<input class="input" name="image" id="image" type="file">
+						    				<small>(Ukuran terbaik 75px&nbsp;&nbsp;x&nbsp;&nbsp;75px)</small>
+						    			</div>			    			
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="form-step-2">
+						<table class="table-common" width="100%" border="0" cellspacing="0" cellpadding="5">
+							<tbody>
+								<tr><th>Data Pewaris</th></tr>
+								<tr valign="top">
+									<td>	
+										<div class="ui-field-contain">
+										    <label for="nama_kerabat">Nama <font color="#dd0000" size="4">*</font></label>
+											<input class="input" name="nama_kerabat" id="nama_kerabat" size="50" value="" maxlength="50" type="text">
+										</div>
+
+										<div class="ui-field-contain">
+										    <label for="hubungan_kerabat">Hubungan <font color="#dd0000" size="4">*</font></label>
+											<input class="input" name="hubungan_kerabat" id="hubungan_kerabat" size="50" value="" maxlength="50" type="text">
+										</div>			
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="form-step-3">
+						<table class="table-common" width="100%" border="0" cellspacing="0" cellpadding="5">
+							<tbody>
+								<tr><th>Data Rekening Bank</th></tr>
+								<tr valign="top">
+									<td>	
+										<div class="ui-field-contain">
+										    <label for="namabank">Nama Bank </label>
+											<select class="input" name="namabank" id="namabank">
+												<option value="N/A">N/A</option>
+												<option selected="" value="Bank BCA">Bank BCA</option>
+												<option value="Bank Mandiri">Bank Mandiri</option>
+												<option value="BNI">BNI</option>
+												<option value="BRI">BRI</option>
+												<option value="Bank Muamalat">Bank Muamalat</option>
+												<option value="Bank BTN">Bank BTN</option>
+												<option value="Bank SUL SEL">Bank SUL SEL</option>
+												<option value="Danamon">Danamon</option>
+												<option value="Bank Mega">Bank Mega</option>
+												<option value="BII">BII</option>
+												<option value="Bank Permata">Bank Permata</option>
+												<option value="Bank CIMB Niaga">Bank CIMB Niaga</option>
+												<option value="Bank Syariah Mandiri">Bank Syariah Mandiri</option>
+												<option value="Bank NTB">Bank NTB</option>
+												<option value="Bank Ekonomi">Bank Ekonomi</option>
+												<option value="Bank NISP">Bank NISP</option>
+												<option value="Bank BUKOPIN">Bank BUKOPIN</option>
+												<option value="Bank UOB BUANA">Bank UOB BUANA</option>
+												<option value="Bank Sinarmas">Bank Sinarmas</option>
+												<option value="Bank BATARA POS">Bank BATARA POS</option>
+												<option value="Bank SULUT">Bank SULUT</option>
+												<option value="BANK JATENG">BANK JATENG</option>
+												<option value="Bank DKI">Bank DKI</option>
+												<option value="Bank PAPUA">Bank PAPUA</option>
+												<option value="Bank NTT">Bank NTT</option>
+												<option value="BRI Syariah">BRI Syariah</option>
+												<option value="BNI Syariah">BNI Syariah</option>
+												<option value="BNP">BNP</option>
+												<option value="Bank PANIN">Bank PANIN</option>
+												<option value="Bank BPD Sul-Teng">Bank BPD Sul-Teng</option>
+												<option value="Bank BTPN">Bank BTPN</option>
+												<option value="Bank SULTRA">Bank SULTRA</option>
+												<option value="Bank BJB syariah">Bank BJB syariah</option>
+												<option value="BANK SUMUT">BANK SUMUT</option>
+												<option value="BPD BALI">BPD BALI</option>
+												<option value="Bank KALTIM">Bank KALTIM</option>
+												<option value="Bank SUMSEL">Bank SUMSEL</option>
+												<option value="bank kalbar">bank kalbar</option>
+												<option value="Bank KALBAR">Bank KALBAR</option>
+												<option value="Bank BJB">Bank BJB</option>
+												<option value="Commonwealt">Commonwealt</option>
+												<option value="Bank Mayora">Bank Mayora</option>
+												<option value="Bank CIMB Niaga Syariah">Bank CIMB Niaga Syariah</option>
+												<option value="BCA Syariah">BCA Syariah</option>
+												<option value="BPD DIY">BPD DIY</option>
+												<option value="Bank Permata Syariah">Bank Permata Syariah</option>
+												<option value="Bank Mega Syariah">Bank Mega Syariah</option>
+												<option value="Bank Mega Syariah">Bank Mega Syariah</option>
+												<option value="Bank Saudara">Bank Saudara</option>
+												<option value="Bukopin Syariah">Bukopin Syariah</option>
+												<option value="Bank DBS Indonesia">Bank DBS Indonesia</option>
+												<option value="BPD Banda Aceh">BPD Banda Aceh</option>
+												<option value="BPD Riau">BPD Riau</option>
+												<option value="Bank NAGARI">Bank NAGARI</option>
+												<option value="Bank MAYAPADA">Bank MAYAPADA</option>
+												<option value="Bank Jatim">Bank Jatim</option>
+											</select>
+										</div>
+
+										<div class="ui-field-contain">
+										    <label for="cabang">Cabang</label>
+											<input readonly="" class="input" name="cabang" id="cabang" size="50" value="Panakkukang" maxlength="50" type="text">
+										</div>
+
+										<div class="ui-field-contain">
+										    <label for="kotabank">Kota Bank</label>
+											<input readonly="" class="input" name="kotabank" id="kotabank" size="50" value="Makassar" maxlength="50" type="text">
+										</div>
+
+										<div class="ui-field-contain">
+										    <label for="namanasabah">Nama Nasabah</label>
+											<input class="input" name="namanasabah" id="namanasabah" readonly="" size="50" value="MILAGROS" maxlength="50" type="text">
+										</div>
+
+										<div class="ui-field-contain">
+										    <label for="norek">No. Rekening</label>
+											<input readonly="" class="input" name="norek" id="norek" size="50" value="7890526688" maxlength="50" type="text">
+										</div>																				
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="form-step-2">
+						<table class="table-common" width="100%" border="0" cellspacing="0" cellpadding="5">
+							<tbody>
+								<tr><th>Konfirmasi PIN</th></tr>
+								<tr valign="top">
+									<td>	
+										<div class="ui-field-contain">
+										    <label for="pin">PIN</label>
+											<input class="input" name="pin" id="pin" size="10" value="" maxlength="50" type="password">
+										</div>
+
+										<div class="ui-field-contain">
+											<label for="submit-8">&nbsp;</label>
+											<div data-role="controlgroup" data-type="horizontal">
+											    <button type="submit" name="submit-8" data-icon="arrow-r" class="ui-shadow ui-btn ui-corner-all"><span class="ui-icon-check ui-btn-icon-right" style="position:relative;">Simpan</span></button>
+
+												<button type="reset" name="submit-9" data-icon="arrow-r" class="ui-shadow ui-btn ui-corner-all"><span class="ui-icon-refresh ui-btn-icon-right" style="position:relative;">Batal</span></button>			
+											</div>										
+										</div>																				
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>															
+				</form>										
+			</article>			    
+	        <div class="clear"></div>
+	    </div><!-- /content -->
+
+		<footer data-role="footer" data-position="fixed" class="ui-fixed">
+			<nav data-role="navbar">
+				<ul class="ui-alt-icon">
+					<li><a href="home" data-icon="calendar">Agenda</a></li>
+					<li><a href="Photos" data-icon="eye">Statistik</a></li>
+					<li><a href="Info" data-icon="lock">Login</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div><!-- Page Photos -->
+</body>
+</html>

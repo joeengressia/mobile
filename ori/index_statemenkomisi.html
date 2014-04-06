@@ -1,0 +1,1331 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Virtual Office - MLM Clients</title>
+	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="css/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="css/images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="css/images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="css/images/apple-touch-icon-57-precomposed.png">
+
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>    
+
+    <!-- stylesheet library -->
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.2.css" />
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/custom.css" />    	
+
+	<!-- javascript library -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.2.js"></script>
+
+	<!-- javascript plugin -->
+	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+	<script type='text/javascript' src="js/owl.carousel.min.js"></script>
+	<script type='text/javascript' src="js/script-lib.js"></script>	
+	
+</head>
+
+<body>
+	<!-- Splash screen - ->
+  	<div id="splash"> 
+	   <img id="splash-bg" src="images/splash/splashscreen_bg.jpg" alt="splash image"/>
+	   <div class="splash-brand"><img id="splash-title" src="images/splash/logo.png" alt="splash title" /></div>
+	</div> 
+  	<!-- end splash screen -->
+
+	<div data-role="panel" id="mypanel">
+		<!-- navigation menu -->
+		<nav id="menu">
+			<ul>
+				<li> <!--class="Selected"-->
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-gear"></i> Menu Utama</a>
+					<ul>
+						<li><a href="index_profile.html" data-transition="pop">Profile</a></li>
+						<li><a href="index_testimoni.html" data-transition="pop">Testimonial</a></li>
+						<li><a href="index_password.html" data-transition="pop">Ubah Password</a></li>
+						<li><a href="index_register.html" data-transition="pop">Registrasi</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-grid"></i>Jaringan</a>
+					<ul>
+						<li><a href="index_infojaringan.html" data-transition="pop">Status Jaringan</a></li>
+						<li><a href="index_geneologi.html" data-transition="pop">Geneologi</a></li>
+						<li><a href="index_sponsorisasi.html" data-transition="pop">Sponsorisasi</a></li>
+						<li><a href="index_reportpoin.html" data-transition="pop">Report Poin</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-star"></i>Komisi</a>
+					<ul>
+						<li><a href="index_statuskomisi.html" data-transition="pop">Status Komisi</a></li>
+						<li><a href="index_statemenkomisi.html" data-transition="pop">Statemen Komisi</a></li>
+						<li><a href="index_historykomisi.html" data-transition="pop">Histori Komisi</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-shop"></i>Repeat Order</a>
+					<ul>
+						<li><a href="index_ro_formulir.html" data-transition="pop">Formulir RO</a></li>
+						<li><a href="index_ro_bonus.html" data-transition="pop">Bonus RO</a></li>
+						<li><a href="index_ro_omsetgroup.html" data-transition="pop">Omset Grup</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-mail"></i>Message</a>
+					<ul>
+						<li><a href="index_msg_sent.html" data-transition="pop">Kirim Pesan</a></li>
+						<li><a href="index_msg_inbox.html" data-transition="pop">Inbox</a></li>
+					</ul>
+				</li>																	
+			</ul>
+		</nav>		
+		<!-- end navigation menu -->			    
+	</div>  	
+
+	<div data-dom-cache="false" data-role="page" data-theme="b" id="demo-page" class="my-page">
+		<header data-role="header" class="ui-alt-icon">
+			<a href="index.html" data-rel="back" data-ajax="false" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all" id="menu-button">Beranda</a>
+			<h1>MLM Basic Apps</h1>
+		</header>
+
+	    <div data-role="header" class="container brand-header">
+			<div class="branding">
+				<a href="#"><img src="images/logo-milagros.png"></a>
+			</div>    		
+	    </div>		
+
+	    <!--<div role="main" class="ui-content">-->
+	    <div data-role="content" data-theme="b" class="minus-shadow">
+			<article class="container">
+				<h2 class="title">History Transfer</h2>
+				<br>
+				<table class="table table-striped table-responsive table-bordered table-th" width="100%" >
+					<tbody>
+						<tr>
+							<th align="center" width="5%">No.</th>
+							<th align="center" width="15%">Tanggal</th>
+							<th align="center">Keterangan</th>
+							<th align="center">Ditransfer (Rp.)</th>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">21 Juni 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=3" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 21-06-2010</a></td>
+							<td align="right">1,384,200,-</td>
+					  	</tr>
+						<tr class="even">
+							<td align="center">2</td>
+							<td align="center">28 Juni 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=124" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 28-06-2010</a></td>
+							<td align="right">1,800,000,-</td>
+					  	</tr>
+						<tr>
+							<td align="center">3</td>
+							<td align="center">05 Juli 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=216" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 05-07-2010</a></td>
+						<td align="right">1,389,600,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">4</td>
+							<td align="center">12 Juli 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=278" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 12-07-2010</a></td>
+							<td align="right">957,600,-</td>
+					  	</tr>
+						<tr>
+							<td align="center">5</td>
+							<td align="center">19 Juli 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=318" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 19-07-2010</a></td>
+							<td align="right">702,000,-</td>
+					  	</tr>
+						<tr class="even">
+							<td align="center">6</td>
+							<td align="center">26 Juli 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=377" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 26-07-2010</a></td>
+							<td align="right">970,200,-</td>
+					  	</tr>
+						<tr>
+							<td align="center">7</td>
+							<td align="center">02 Agustus 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=427" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 02-08-2010</a></td>
+							<td align="right">1,081,800,-</td>
+					  	</tr>
+						<tr class="even">
+							<td align="center">8</td>
+							<td align="center">09 Agustus 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=503" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 09-08-2010</a></td>
+							<td align="right">1,661,400,-</td>
+					  	</tr>
+						<tr>
+							<td align="center">9</td>
+							<td align="center">16 Agustus 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=598" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 16-08-2010</a></td>
+							<td align="right">883,800,-</td>
+					  	</tr>
+						<tr class="even">
+							<td align="center">10</td>
+							<td align="center">23 Agustus 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=677" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 23-08-2010</a></td>
+							<td align="right">927,000,-</td>
+					 	</tr>
+						<tr>
+							<td align="center">11</td>
+							<td align="center">30 Agustus 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=760" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 30-08-2010</a></td>
+							<td align="right">1,845,000,-</td>
+					  	</tr>
+						<tr class="even">
+							<td align="center">12</td>
+							<td align="center">06 September 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=871" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 06-09-2010</a></td>
+							<td align="right">1,308,600,-</td>
+					  	</tr>
+						<tr>
+							<td align="center">13</td>
+							<td align="center">13 September 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=943" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 13-09-2010</a></td>
+							<td align="right">826,200,-</td>
+					  	</tr>
+						<tr class="even">
+							<td align="center">14</td>
+							<td align="center">20 September 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=998" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 20-09-2010</a></td>
+							<td align="right">853,200,-</td>
+					  	</tr>
+						<tr>
+							<td align="center">15</td>
+							<td align="center">27 September 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1074" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 27-09-2010</a></td>
+							<td align="right">1,152,000,-</td>
+					  	</tr>
+						<tr class="even">
+							<td align="center">16</td>
+							<td align="center">04 Oktober 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1173" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 04-10-2010</a></td>
+							<td align="right">894,600,-</td>
+					  	</tr>
+						<tr>
+							<td align="center">17</td>
+							<td align="center">11 Oktober 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1313" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 11-10-2010</a></td>
+							<td align="right">603,000,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">18</td>
+							<td align="center">18 Oktober 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1397" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 18-10-2010</a></td>
+							<td align="right">999,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">19</td>
+							<td align="center">25 Oktober 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1501" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 25-10-2010</a></td>
+							<td align="right">644,400,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">20</td>
+							<td align="center">01 November 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1593" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 01-11-2010</a></td>
+							<td align="right">957,600,-</td>
+					  </tr>
+							<tr>
+							<td align="center">21</td>
+							<td align="center">08 November 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1724" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 08-11-2010</a></td>
+							<td align="right">829,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">22</td>
+							<td align="center">15 November 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1813" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 15-11-2010</a></td>
+							<td align="right">1,047,600,-</td>
+					  </tr>
+							<tr>
+							<td align="center">23</td>
+							<td align="center">22 November 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1884" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 22-11-2010</a></td>
+							<td align="right">869,400,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">24</td>
+							<td align="center">29 November 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=1968" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 29-11-2010</a></td>
+							<td align="right">1,333,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">25</td>
+							<td align="center">06 Desember 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2097" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 06-12-2010</a></td>
+							<td align="right">716,400,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">26</td>
+							<td align="center">13 Desember 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2232" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 13-12-2010</a></td>
+							<td align="right">1,683,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">27</td>
+							<td align="center">20 Desember 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2361" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 20-12-2010</a></td>
+							<td align="right">990,000,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">28</td>
+							<td align="center">27 Desember 2010</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2463" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 27-12-2010</a></td>
+							<td align="right">583,200,-</td>
+					  </tr>
+							<tr>
+							<td align="center">29</td>
+							<td align="center">03 Januari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2562" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 03-01-2011</a></td>
+							<td align="right">381,600,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">30</td>
+							<td align="center">10 Januari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2687" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 10-01-2011</a></td>
+							<td align="right">702,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">31</td>
+							<td align="center">17 Januari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2765" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 17-01-2011</a></td>
+							<td align="right">955,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">32</td>
+							<td align="center">24 Januari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2878" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 24-01-2011</a></td>
+							<td align="right">441,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">33</td>
+							<td align="center">31 Januari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=2999" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 31-01-2011</a></td>
+							<td align="right">289,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">34</td>
+							<td align="center">07 Februari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=3122" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 07-02-2011</a></td>
+							<td align="right">590,400,-</td>
+					  </tr>
+							<tr>
+							<td align="center">35</td>
+							<td align="center">16 Februari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=3300" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 16-02-2011</a></td>
+							<td align="right">1,364,400,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">36</td>
+							<td align="center">21 Februari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=3442" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 21-02-2011</a></td>
+							<td align="right">682,200,-</td>
+					  </tr>
+							<tr>
+							<td align="center">37</td>
+							<td align="center">28 Februari 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=3541" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 28-02-2011</a></td>
+							<td align="right">639,000,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">38</td>
+							<td align="center">07 Maret 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=3693" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 07-03-2011</a></td>
+							<td align="right">514,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">39</td>
+							<td align="center">14 Maret 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=3882" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 14-03-2011</a></td>
+							<td align="right">370,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">40</td>
+							<td align="center">21 Maret 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=3970" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 21-03-2011</a></td>
+							<td align="right">1,038,600,-</td>
+					  </tr>
+							<tr>
+							<td align="center">41</td>
+							<td align="center">28 Maret 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=4101" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 28-03-2011</a></td>
+							<td align="right">1,245,600,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">42</td>
+							<td align="center">04 April 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=4278" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 04-04-2011</a></td>
+							<td align="right">1,985,400,-</td>
+					  </tr>
+							<tr>
+							<td align="center">43</td>
+							<td align="center">11 April 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=4506" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 11-04-2011</a></td>
+							<td align="right">1,850,400,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">44</td>
+							<td align="center">18 April 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=4682" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 18-04-2011</a></td>
+							<td align="right">1,312,200,-</td>
+					  </tr>
+							<tr>
+							<td align="center">45</td>
+							<td align="center">25 April 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=4794" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 25-04-2011</a></td>
+							<td align="right">655,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">46</td>
+							<td align="center">02 Mei 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=4954" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 02-05-2011</a></td>
+							<td align="right">1,981,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">47</td>
+							<td align="center">09 Mei 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=5163" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 09-05-2011</a></td>
+							<td align="right">948,600,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">48</td>
+							<td align="center">16 Mei 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=5285" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 16-05-2011</a></td>
+							<td align="right">723,600,-</td>
+					  </tr>
+							<tr>
+							<td align="center">49</td>
+							<td align="center">23 Mei 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=5388" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 23-05-2011</a></td>
+							<td align="right">450,000,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">50</td>
+							<td align="center">30 Mei 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=5491" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 30-05-2011</a></td>
+							<td align="right">590,400,-</td>
+					  </tr>
+							<tr>
+							<td align="center">51</td>
+							<td align="center">06 Juni 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=5644" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 06-06-2011</a></td>
+							<td align="right">1,284,300,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">52</td>
+							<td align="center">13 Juni 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=5827" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 13-06-2011</a></td>
+							<td align="right">586,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">53</td>
+							<td align="center">20 Juni 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=5895" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 20-06-2011</a></td>
+							<td align="right">966,600,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">54</td>
+							<td align="center">27 Juni 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=5991" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 27-06-2011</a></td>
+							<td align="right">468,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">55</td>
+							<td align="center">04 Juli 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6089" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 04-07-2011</a></td>
+							<td align="right">464,400,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">56</td>
+							<td align="center">11 Juli 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6224" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 11-07-2011</a></td>
+							<td align="right">720,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">57</td>
+							<td align="center">18 Juli 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6298" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 18-07-2011</a></td>
+							<td align="right">664,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">58</td>
+							<td align="center">25 Juli 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6400" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 25-07-2011</a></td>
+							<td align="right">684,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">59</td>
+							<td align="center">01 Agustus 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6519" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 01-08-2011</a></td>
+							<td align="right">1,065,600,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">60</td>
+							<td align="center">08 Agustus 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6700" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 08-08-2011</a></td>
+							<td align="right">795,600,-</td>
+					  </tr>
+							<tr>
+							<td align="center">61</td>
+							<td align="center">15 Agustus 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6766" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 15-08-2011</a></td>
+							<td align="right">718,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">62</td>
+							<td align="center">22 Agustus 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6848" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 22-08-2011</a></td>
+							<td align="right">604,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">63</td>
+							<td align="center">29 Agustus 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=6916" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 29-08-2011</a></td>
+							<td align="right">502,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">64</td>
+							<td align="center">05 September 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7022" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 05-09-2011</a></td>
+							<td align="right">927,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">65</td>
+							<td align="center">12 September 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7153" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 12-09-2011</a></td>
+							<td align="right">264,600,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">66</td>
+							<td align="center">19 September 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7198" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 19-09-2011</a></td>
+							<td align="right">318,600,-</td>
+					  </tr>
+							<tr>
+							<td align="center">67</td>
+							<td align="center">26 September 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7279" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 26-09-2011</a></td>
+							<td align="right">568,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">68</td>
+							<td align="center">03 Oktober 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7415" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 03-10-2011</a></td>
+							<td align="right">1,665,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">69</td>
+							<td align="center">10 Oktober 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7617" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 10-10-2011</a></td>
+							<td align="right">1,072,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">70</td>
+							<td align="center">17 Oktober 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7707" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 17-10-2011</a></td>
+							<td align="right">1,081,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">71</td>
+							<td align="center">24 Oktober 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7833" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 24-10-2011</a></td>
+							<td align="right">1,519,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">72</td>
+							<td align="center">31 Oktober 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=7986" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 31-10-2011</a></td>
+							<td align="right">1,683,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">73</td>
+							<td align="center">07 November 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=8167" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 07-11-2011</a></td>
+							<td align="right">3,048,300,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">74</td>
+							<td align="center">14 November 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=8429" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 14-11-2011</a></td>
+							<td align="right">2,053,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">75</td>
+							<td align="center">21 November 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=8570" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 21-11-2011</a></td>
+							<td align="right">1,945,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">76</td>
+							<td align="center">28 November 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=8730" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 28-11-2011</a></td>
+							<td align="right">1,242,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">77</td>
+							<td align="center">05 Desember 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=8902" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 05-12-2011</a></td>
+							<td align="right">2,330,100,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">78</td>
+							<td align="center">12 Desember 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=9139" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 12-12-2011</a></td>
+							<td align="right">1,814,400,-</td>
+					  </tr>
+							<tr>
+							<td align="center">79</td>
+							<td align="center">19 Desember 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=9245" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 19-12-2011</a></td>
+							<td align="right">1,573,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">80</td>
+							<td align="center">26 Desember 2011</td>
+							<td><a href="modules/voffice/statementbonus.php?id=9376" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 26-12-2011</a></td>
+							<td align="right">1,683,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">81</td>
+							<td align="center">02 Januari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=9583" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 02-01-2012</a></td>
+							<td align="right">1,920,600,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">82</td>
+							<td align="center">09 Januari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=9829" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 09-01-2012</a></td>
+							<td align="right">1,414,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">83</td>
+							<td align="center">16 Januari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=9952" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 16-01-2012</a></td>
+							<td align="right">1,585,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">84</td>
+							<td align="center">23 Januari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=10134" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 23-01-2012</a></td>
+							<td align="right">1,942,200,-</td>
+					  </tr>
+							<tr>
+							<td align="center">85</td>
+							<td align="center">30 Januari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=10328" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 30-01-2012</a></td>
+							<td align="right">1,688,400,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">86</td>
+							<td align="center">06 Februari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=10586" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 06-02-2012</a></td>
+							<td align="right">3,153,600,-</td>
+					  </tr>
+							<tr>
+							<td align="center">87</td>
+							<td align="center">13 Februari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=11006" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 13-02-2012</a></td>
+							<td align="right">1,899,000,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">88</td>
+							<td align="center">20 Februari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=11203" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 20-02-2012</a></td>
+							<td align="right">1,902,600,-</td>
+					  </tr>
+							<tr>
+							<td align="center">89</td>
+							<td align="center">27 Februari 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=11394" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 27-02-2012</a></td>
+							<td align="right">1,681,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">90</td>
+							<td align="center">05 Maret 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=11743" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 05-03-2012</a></td>
+							<td align="right">3,444,300,-</td>
+					  </tr>
+							<tr>
+							<td align="center">91</td>
+							<td align="center">12 Maret 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=12224" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 12-03-2012</a></td>
+							<td align="right">2,088,000,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">92</td>
+							<td align="center">19 Maret 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=12532" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 19-03-2012</a></td>
+							<td align="right">2,061,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">93</td>
+							<td align="center">26 Maret 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=12858" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 26-03-2012</a></td>
+							<td align="right">1,827,000,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">94</td>
+							<td align="center">02 April 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=13194" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 02-04-2012</a></td>
+							<td align="right">3,375,900,-</td>
+					  </tr>
+							<tr>
+							<td align="center">95</td>
+							<td align="center">09 April 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=13775" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 09-04-2012</a></td>
+							<td align="right">2,172,600,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">96</td>
+							<td align="center">16 April 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=14151" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 16-04-2012</a></td>
+							<td align="right">2,401,200,-</td>
+					  </tr>
+							<tr>
+							<td align="center">97</td>
+							<td align="center">23 April 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=14506" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 23-04-2012</a></td>
+							<td align="right">2,170,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">98</td>
+							<td align="center">30 April 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=14875" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 30-04-2012</a></td>
+							<td align="right">1,744,200,-</td>
+					  </tr>
+							<tr>
+							<td align="center">99</td>
+							<td align="center">07 Mei 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=15284" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 07-05-2012</a></td>
+							<td align="right">4,286,700,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">100</td>
+							<td align="center">14 Mei 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=15940" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 14-05-2012</a></td>
+							<td align="right">2,952,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">101</td>
+							<td align="center">21 Mei 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=16339" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 21-05-2012</a></td>
+							<td align="right">2,197,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">102</td>
+							<td align="center">28 Mei 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=16707" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 28-05-2012</a></td>
+							<td align="right">1,998,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">103</td>
+							<td align="center">04 Juni 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=17041" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 04-06-2012</a></td>
+							<td align="right">1,456,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">104</td>
+							<td align="center">11 Juni 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=17596" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 11-06-2012</a></td>
+							<td align="right">1,728,000,-</td>
+					  </tr>
+							<tr>
+							<td align="center">105</td>
+							<td align="center">18 Juni 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=17925" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 18-06-2012</a></td>
+							<td align="right">2,134,800,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">106</td>
+							<td align="center">25 Juni 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=18214" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 25-06-2012</a></td>
+							<td align="right">1,819,800,-</td>
+					  </tr>
+							<tr>
+							<td align="center">107</td>
+							<td align="center">02 Juli 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=18509" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 02-07-2012</a></td>
+							<td align="right">3,292,200,-</td>
+					  </tr>
+							<tr class="even">
+							<td align="center">108</td>
+							<td align="center">09 Juli 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=19063" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 09-07-2012</a></td>
+							<td align="right">1,863,000,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">109</td>
+							<td align="center">16 Juli 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=19303" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 16-07-2012</a></td>
+							<td align="right">1,884,600,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">110</td>
+							<td align="center">23 Juli 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=19583" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 23-07-2012</a></td>
+							<td align="right">1,699,200,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">111</td>
+							<td align="center">30 Juli 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=19832" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 30-07-2012</a></td>
+							<td align="right">1,006,200,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">112</td>
+							<td align="center">06 Agustus 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=20020" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 06-08-2012</a></td>
+							<td align="right">3,167,100,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">113</td>
+							<td align="center">13 Agustus 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=20552" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 13-08-2012</a></td>
+							<td align="right">1,553,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">114</td>
+							<td align="center">20 Agustus 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=20773" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 20-08-2012</a></td>
+							<td align="right">1,143,000,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">115</td>
+							<td align="center">27 Agustus 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=20970" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 27-08-2012</a></td>
+							<td align="right">905,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">116</td>
+							<td align="center">03 September 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=21187" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 03-09-2012</a></td>
+							<td align="right">3,401,100,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">117</td>
+							<td align="center">10 September 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=21716" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 10-09-2012</a></td>
+							<td align="right">1,544,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">118</td>
+							<td align="center">17 September 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=21919" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 17-09-2012</a></td>
+							<td align="right">919,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">119</td>
+							<td align="center">24 September 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=22112" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 24-09-2012</a></td>
+							<td align="right">957,600,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">120</td>
+							<td align="center">01 Oktober 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=22316" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 01-10-2012</a></td>
+							<td align="right">2,409,300,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">121</td>
+							<td align="center">08 Oktober 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=22773" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 08-10-2012</a></td>
+							<td align="right">1,558,800,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">122</td>
+							<td align="center">15 Oktober 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=23028" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 15-10-2012</a></td>
+							<td align="right">1,378,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">123</td>
+							<td align="center">22 Oktober 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=23275" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 22-10-2012</a></td>
+							<td align="right">1,159,200,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">124</td>
+							<td align="center">29 Oktober 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=23560" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 29-10-2012</a></td>
+							<td align="right">1,063,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">125</td>
+							<td align="center">05 November 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=23805" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 05-11-2012</a></td>
+							<td align="right">2,884,500,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">126</td>
+							<td align="center">12 November 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=24355" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 12-11-2012</a></td>
+							<td align="right">1,364,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">127</td>
+							<td align="center">19 November 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=24604" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 19-11-2012</a></td>
+							<td align="right">1,841,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">128</td>
+							<td align="center">26 November 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=24855" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 26-11-2012</a></td>
+							<td align="right">1,702,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">129</td>
+							<td align="center">03 Desember 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=25205" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 03-12-2012</a></td>
+							<td align="right">3,573,900,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">130</td>
+							<td align="center">10 Desember 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=25789" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 10-12-2012</a></td>
+							<td align="right">1,690,200,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">131</td>
+							<td align="center">17 Desember 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=26096" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 17-12-2012</a></td>
+							<td align="right">1,706,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">132</td>
+							<td align="center">24 Desember 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=26396" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 24-12-2012</a></td>
+							<td align="right">1,413,000,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">133</td>
+							<td align="center">31 Desember 2012</td>
+							<td><a href="modules/voffice/statementbonus.php?id=26670" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 31-12-2012</a></td>
+							<td align="right">552,600,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">134</td>
+							<td align="center">07 Januari 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=26878" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 07-01-2013</a></td>
+							<td align="right">4,707,900,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">135</td>
+							<td align="center">14 Januari 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=27268" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 14-01-2013</a></td>
+							<td align="right">1,589,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">136</td>
+							<td align="center">21 Januari 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=27446" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 21-01-2013</a></td>
+							<td align="right">1,751,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">137</td>
+							<td align="center">28 Januari 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=27625" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 28-01-2013</a></td>
+							<td align="right">1,497,600,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">138</td>
+							<td align="center">04 Februari 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=27955" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 04-02-2013</a></td>
+							<td align="right">4,013,100,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">139</td>
+							<td align="center">11 Februari 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=28460" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 11-02-2013</a></td>
+							<td align="right">2,655,000,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">140</td>
+							<td align="center">18 Februari 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=28782" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 18-02-2013</a></td>
+							<td align="right">2,775,600,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">141</td>
+							<td align="center">25 Februari 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=29182" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 25-02-2013</a></td>
+							<td align="right">2,408,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">142</td>
+							<td align="center">04 Maret 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=29666" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 04-03-2013</a></td>
+							<td align="right">3,641,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">143</td>
+							<td align="center">11 Maret 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=30223" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 11-03-2013</a></td>
+							<td align="right">2,660,400,-</td>
+					 	</tr>
+							<tr class="even">
+							<td align="center">144</td>
+							<td align="center">18 Maret 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=30806" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 18-03-2013</a></td>
+							<td align="right">2,660,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">145</td>
+							<td align="center">25 Maret 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=31416" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 25-03-2013</a></td>
+							<td align="right">2,295,000,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">146</td>
+							<td align="center">01 April 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=32086" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 01-04-2013</a></td>
+							<td align="right">3,873,600,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">147</td>
+							<td align="center">08 April 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=32846" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 08-04-2013</a></td>
+							<td align="right">1,990,800,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">148</td>
+							<td align="center">15 April 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=34575" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 15-04-2013</a></td>
+							<td align="right">2,395,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">149</td>
+							<td align="center">22 April 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=35447" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 22-04-2013</a></td>
+							<td align="right">1,603,800,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">150</td>
+							<td align="center">29 April 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=36201" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 29-04-2013</a></td>
+							<td align="right">2,593,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">151</td>
+							<td align="center">06 Mei 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=37101" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 06-05-2013</a></td>
+							<td align="right">2,667,600,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">152</td>
+							<td align="center">13 Mei 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=38073" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 13-05-2013</a></td>
+							<td align="right">2,881,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">153</td>
+							<td align="center">20 Mei 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=39192" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 20-05-2013</a></td>
+							<td align="right">2,502,000,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">154</td>
+							<td align="center">27 Mei 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=40404" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 27-05-2013</a></td>
+							<td align="right">2,433,600,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">155</td>
+							<td align="center">03 Juni 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=41597" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 03-06-2013</a></td>
+							<td align="right">3,445,200,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">156</td>
+							<td align="center">10 Juni 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=43060" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 10-06-2013</a></td>
+							<td align="right">2,030,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">157</td>
+							<td align="center">17 Juni 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=44336" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 17-06-2013</a></td>
+							<td align="right">2,412,000,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">158</td>
+							<td align="center">24 Juni 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=45711" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 24-06-2013</a></td>
+							<td align="right">2,311,200,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">159</td>
+							<td align="center">01 Juli 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=47198" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 01-07-2013</a></td>
+							<td align="right">3,372,300,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">160</td>
+							<td align="center">08 Juli 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=48826" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 08-07-2013</a></td>
+							<td align="right">3,052,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">161</td>
+							<td align="center">15 Juli 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=50457" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 15-07-2013</a></td>
+							<td align="right">3,353,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">162</td>
+							<td align="center">22 Juli 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=52246" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 22-07-2013</a></td>
+							<td align="right">2,615,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">163</td>
+							<td align="center">29 Juli 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=53884" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 29-07-2013</a></td>
+							<td align="right">2,719,800,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">164</td>
+							<td align="center">05 Agustus 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=55593" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 05-08-2013</a></td>
+							<td align="right">3,287,700,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">165</td>
+							<td align="center">12 Agustus 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=57165" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 12-08-2013</a></td>
+							<td align="right">2,390,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">166</td>
+							<td align="center">19 Agustus 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=58421" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 19-08-2013</a></td>
+							<td align="right">2,185,200,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">167</td>
+							<td align="center">26 Agustus 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=59920" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-08-26</a></td>
+							<td align="right">2,489,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">168</td>
+							<td align="center">02 September 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=61804" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-09-02</a></td>
+							<td align="right">3,735,000,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">169</td>
+							<td align="center">09 September 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=64019" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-09-09</a></td>
+							<td align="right">3,157,200,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">170</td>
+							<td align="center">16 September 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=66335" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-09-16</a></td>
+							<td align="right">2,997,000,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">171</td>
+							<td align="center">23 September 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=68935" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-09-23</a></td>
+							<td align="right">2,836,800,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">172</td>
+							<td align="center">30 September 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=71469" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-09-30</a></td>
+							<td align="right">2,556,000,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">173</td>
+							<td align="center">07 Oktober 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=74236" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-10-07</a></td>
+							<td align="right">4,027,500,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">174</td>
+							<td align="center">14 Oktober 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=77324" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-10-14</a></td>
+							<td align="right">3,099,600,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">175</td>
+							<td align="center">21 Oktober 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=80486" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-10-21</a></td>
+							<td align="right">2,943,000,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">176</td>
+							<td align="center">28 Oktober 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=83664" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-10-28</a></td>
+							<td align="right">2,863,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">177</td>
+							<td align="center">04 November 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=87208" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-11-04</a></td>
+							<td align="right">3,665,700,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">178</td>
+							<td align="center">11 November 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=90973" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-11-11</a></td>
+							<td align="right">2,939,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">179</td>
+							<td align="center">18 November 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=94715" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-11-18</a></td>
+							<td align="right">2,980,800,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">180</td>
+							<td align="center">25 November 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=98449" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-11-25</a></td>
+							<td align="right">3,024,000,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">181</td>
+							<td align="center">02 Desember 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=102548" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-12-02</a></td>
+							<td align="right">4,266,900,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">182</td>
+							<td align="center">09 Desember 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=106733" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-12-09</a></td>
+							<td align="right">2,811,600,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">183</td>
+							<td align="center">16 Desember 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=111075" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-12-16</a></td>
+							<td align="right">2,649,600,-</td>
+					 	</tr>
+							<tr class="even">
+							<td align="center">184</td>
+							<td align="center">23 Desember 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=115514" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-12-23</a></td>
+							<td align="right">3,340,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">185</td>
+							<td align="center">30 Desember 2013</td>
+							<td><a href="modules/voffice/statementbonus.php?id=120480" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2013-12-30</a></td>
+							<td align="right">2,633,400,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">186</td>
+							<td align="center">06 Januari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=125137" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-01-06</a></td>
+							<td align="right">4,573,800,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">187</td>
+							<td align="center">13 Januari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=129183" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-01-13</a></td>
+							<td align="right">2,244,600,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">188</td>
+							<td align="center">20 Januari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=132179" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-01-20</a></td>
+							<td align="right">2,498,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">189</td>
+							<td align="center">27 Januari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=135071" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-01-27</a></td>
+							<td align="right">2,880,000,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">190</td>
+							<td align="center">03 Februari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=137842" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-02-03</a></td>
+							<td align="right">2,241,000,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">191</td>
+							<td align="center">10 Februari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=140558" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-02-10</a></td>
+							<td align="right">3,120,300,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">192</td>
+							<td align="center">10 Februari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=142564" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-02-10</a></td>
+							<td align="right">2,337,750,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">193</td>
+							<td align="center">17 Februari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=143373" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-02-17</a></td>
+							<td align="right">1,737,000,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">194</td>
+							<td align="center">24 Februari 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=146116" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-02-24</a></td>
+							<td align="right">1,760,400,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">195</td>
+							<td align="center">03 Maret 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=148643" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-03-03</a></td>
+							<td align="right">1,710,000,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">196</td>
+							<td align="center">10 Maret 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=151327" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-03-10</a></td>
+							<td align="right">2,118,600,-</td>
+					  	</tr>
+							<tr>
+							<td align="center">197</td>
+							<td align="center">17 Maret 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=154191" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-03-17</a></td>
+							<td align="right">1,470,600,-</td>
+					  	</tr>
+							<tr class="even">
+							<td align="center">198</td>
+							<td align="center">24 Maret 2014</td>
+							<td><a href="modules/voffice/statementbonus.php?id=157036" onclick="javascript:open_querywindow(this.href); return false;">Pembayaran Komisi 2014-03-24</a></td>
+							<td align="right">2,039,400,-</td>
+					  	</tr>
+</tbody>
+				</table>																
+			</article>		    
+	        <div class="clear"></div>
+	    </div><!-- /content -->
+
+		<footer data-role="footer" data-position="fixed" class="ui-fixed">
+			<nav data-role="navbar">
+				<ul class="ui-alt-icon">
+					<li><a href="home" data-icon="calendar">Agenda</a></li>
+					<li><a href="Photos" data-icon="eye">Statistik</a></li>
+					<li><a href="Info" data-icon="lock">Login</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div><!-- Page Photos -->
+</body>
+</html>

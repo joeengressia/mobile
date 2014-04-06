@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Virtual Office - MLM Clients</title>
+	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="css/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="css/images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="css/images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="css/images/apple-touch-icon-57-precomposed.png">
+
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>    
+
+    <!-- stylesheet library -->
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.2.css" />
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/custom.css" />  
+	<!--<script src="js/jquery.min.js"></script>-->
+        <script src="assets/js/jquery-1.8.3.min.js"></script>
+
+   
+        <!-- javascript library -->
+	<script src="js/jquery.mobile-1.4.2.js"></script>
+	<!-- javascript plugin -->
+	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+	<script type='text/javascript' src="js/owl.carousel.min.js"></script>
+	<script type='text/javascript' src="js/script-lib.js"></script>	
+
+        
+       
+</head>
+
+
+
+<body>
+    
+        <div data-role="panel" id="mypanel">
+		<!-- navigation menu -->
+		<nav id="menu">
+			<ul>
+																				
+			</ul>
+                    
+		</nav>		
+		<!-- end navigation menu -->		    
+	</div>  	
+
+	<div data-dom-cache="false" data-role="page" data-theme="b" id="demo-page" class="my-page">
+		<header data-role="header" class="ui-alt-icon">
+			<a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-left ui-corner-all" id="menu-button">Menu</a>
+			<h1>MLM Basic Apps</h1>
+		</header>
+
+	    <div data-role="header" class="container brand-header">
+			<div class="branding">
+				<a href="#"><img src="images/logo-milagros.png"></a>
+			</div>    		
+	    </div>		
+
+	    <!--<div role="main" class="ui-content">-->
+	    <div data-role="content" data-theme="b" class="minus-shadow " id="backbone_content">
+				
+                <div class="clear"></div>
+	    </div><!-- /content -->
+
+		<footer data-role="footer" data-position="fixed" class="ui-fixed">
+			<nav data-role="navbar">
+				<ul class="ui-alt-icon">
+					<li><a href="index.html"  onclick="window.location.href='#'" data-icon="home">Home</a></li>
+					<li><a href="Photos" data-icon="eye">Statistik</a></li>
+					<li><a href="index.html#login" onclick="window.location.href='#login'" data-icon="lock">Login</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div><!-- Page Photos -->
+        
+        <script type="text/javascript">
+            var _BASE_URL='http://localhost/esoftdream/milagros_mobile_client/';
+            var _API_SERVER_URL='http://localhost/esoftdream/milagros_api/';
+            var output_content=$("#backbone_body");
+
+    </script>
+      <script src="assets/js/underscore.js"></script>
+    <script src="assets/js/backbone.js"></script>
+ 
+   <!--  <script src="assets/js/views/test_dynamic_view.js"></script>
+    <script src="assets/js/views/profile_member_view.js"></script>
+   <script src="assets/js/models/profile_api.js"></script>
+    <script src="assets/js/views/profile_api_view.js"></script>-->
+
+
+    <script src="assets/js/views/before_loged_in.js"></script>
+    <script src="assets/js/models/before_loged_in_api.js"></script>
+
+    <script src="assets/js/views/after_loged_in_api_view.js"></script>
+    <script src="assets/js/models/after_loged_in_api.js"></script>
+
+    <script src="assets/js/views/about.js"></script>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    
+    
+</body>
+</html>

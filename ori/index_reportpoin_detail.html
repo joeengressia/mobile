@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Virtual Office - MLM Clients</title>
+	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="css/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="css/images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="css/images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="css/images/apple-touch-icon-57-precomposed.png">
+
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>    
+
+    <!-- stylesheet library -->
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.2.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.2.css" />
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/custom.css" />    	
+
+	<!-- javascript library -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.2.js"></script>
+
+	<!-- javascript plugin -->
+	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+	<script type='text/javascript' src="js/owl.carousel.min.js"></script>
+	<script type='text/javascript' src="js/script-lib.js"></script>	
+	
+</head>
+
+<body>
+	<!-- Splash screen - ->
+  	<div id="splash"> 
+	   <img id="splash-bg" src="images/splash/splashscreen_bg.jpg" alt="splash image"/>
+	   <div class="splash-brand"><img id="splash-title" src="images/splash/logo.png" alt="splash title" /></div>
+	</div> 
+  	<!-- end splash screen -->
+
+	<div data-role="panel" id="mypanel">
+        <!-- navigation menu -->
+        <nav id="menu">
+            <ul>
+                <li> <!--class="Selected"-->
+                    <a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-gear"></i> Menu Utama</a>
+                    <ul>
+                        <li><a href="index_profile.html" data-transition="pop">Profile</a></li>
+                        <li><a href="index_testimoni.html" data-transition="pop">Testimonial</a></li>
+                        <li><a href="index_password.html" data-transition="pop">Ubah Password</a></li>
+                        <li><a href="index_register.html" data-transition="pop">Registrasi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-grid"></i>Jaringan</a>
+                    <ul>
+                        <li><a href="index_infojaringan.html" data-transition="pop">Status Jaringan</a></li>
+                        <li><a href="index_geneologi.html" data-transition="pop">Geneologi</a></li>
+                        <li><a href="index_sponsorisasi.html" data-transition="pop">Sponsorisasi</a></li>
+                        <li><a href="index_reportpoin.html" data-transition="pop">Report Poin</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-star"></i>Komisi</a>
+                    <ul>
+                        <li><a href="index_statuskomisi.html" data-transition="pop">Status Komisi</a></li>
+                        <li><a href="index_statemenkomisi.html" data-transition="pop">Statemen Komisi</a></li>
+                        <li><a href="index_historykomisi.html" data-transition="pop">Histori Komisi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-shop"></i>Repeat Order</a>
+                    <ul>
+                        <li><a href="index_ro_formulir.html" data-transition="pop">Formulir RO</a></li>
+                        <li><a href="index_ro_bonus.html" data-transition="pop">Bonus RO</a></li>
+                        <li><a href="index_ro_omsetgroup.html" data-transition="pop">Omset Grup</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-mail"></i>Message</a>
+                    <ul>
+                        <li><a href="index_msg_sent.html" data-transition="pop">Kirim Pesan</a></li>
+                        <li><a href="index_msg_inbox.html" data-transition="pop">Inbox</a></li>
+                    </ul>
+                </li>                                                                   
+            </ul>
+        </nav>      
+        <!-- end navigation menu -->     		    
+	</div>  	
+
+	<div data-dom-cache="false" data-role="page" data-theme="b" id="demo-page" class="my-page">
+		<header data-role="header" class="ui-alt-icon">
+            <a href="index.html" data-rel="back" data-ajax="false" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all" id="menu-button">Beranda</a>
+			<h1>MLM Basic Apps</h1>
+		</header>
+
+	    <div data-role="header" class="container brand-header">
+			<div class="branding">
+				<a href="#"><img src="images/logo-milagros.png"></a>
+			</div>    		
+	    </div>		
+
+	    <!--<div role="main" class="ui-content">-->
+	    <div data-role="content" data-theme="b" class="minus-shadow">
+			<article class="container">
+				<h2 class="title">Report Poin Pasangan</h2>
+
+				<table class="table table-striped table-responsive table-bordered table-th" width="100%" >
+					<tbody>
+						<tr>
+			                <th align="center" width="50">Periode</th>
+			                <th align="center" width="50">Poin</th>
+			                <th align="center" width="50">Detail</th>
+			        	</tr>
+
+						<tr>
+                            <td align="center"><b>2013-02</b></td>
+                            <td align="center"><b>684</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-02">Detail</a></b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-03</b></td>
+                            <td align="center"><b>570</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-03">Detail</a></b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-04</b></td>
+                            <td align="center"><b>376</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-04">Detail</a></b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-05</b></td>
+                            <td align="center"><b>1068</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-05">Detail</a></b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-06</b></td>
+                           	<td align="center"><b>1115</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-06">Detail</a></b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-07</b></td>
+                            <td align="center"><b>2060</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-07">Detail</a></b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-08</b></td>
+                            <td align="center"><b>1587</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-08">Detail</a></b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-09</b></td>
+                            <td align="center"><b>1216</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-09">Detail</a></b></td>
+                       	</tr>
+                       	<tr>
+                            <td align="center"><b>2013-10</b></td>
+                            <td align="center"><b>1270</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-10">Detail</a></b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-11</b></td>
+                            <td align="center"><b>918</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-11">Detail</a></b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-12</b></td>
+                           	<td align="center"><b>551</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2013-12">Detail</a></b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2014-01</b></td>
+                            <td align="center"><b>308</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2014-01">Detail</a></b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2014-02</b></td>
+                            <td align="center"><b>135</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2014-02">Detail</a></b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2014-03</b></td>
+                            <td align="center"><b>85</b></td>
+                            <td align="center"><b><a href="index.php?do=voffice.poin&amp;periode=2014-03">Detail</a></b></td>
+                        </tr>
+                    </tbody>				
+				</table>
+
+				<br>
+				<h4 class="title">Detail Poin Periode 2013-02</h4>
+
+				<table class="table table-striped table-responsive table-bordered table-th" width="100%" >
+					<tbody>
+						<tr>
+			                <th align="center" width="50">Tanggal</th>
+							<th align="center" width="50">Pasangan Riil</th>
+			                <th align="center" width="50">Poin</th>
+			        	</tr>
+						<tr>
+                            <td align="center"><b>2013-02-01</b></td>
+                            <td align="center"><b>50</b></td>
+                            <td align="center"><b>38</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-02</b></td>
+                            <td align="center"><b>43</b></td>
+                            <td align="center"><b>31</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-03</b></td>
+                            <td align="center"><b>38</b></td>
+                            <td align="center"><b>26</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-04</b></td>
+                            <td align="center"><b>46</b></td>
+                            <td align="center"><b>34</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-05</b></td>
+                            <td align="center"><b>47</b></td>
+                            <td align="center"><b>35</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-06</b></td>
+                            <td align="center"><b>49</b></td>
+                            <td align="center"><b>37</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-07</b></td>
+                            <td align="center"><b>35</b></td>
+                            <td align="center"><b>23</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-08</b></td>
+                            <td align="center"><b>22</b></td>
+                            <td align="center"><b>10</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-09</b></td>
+                            <td align="center"><b>30</b></td>
+                            <td align="center"><b>18</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-10</b></td>
+                            <td align="center"><b>36</b></td>
+                            <td align="center"><b>24</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-12</b></td>
+                            <td align="center"><b>44</b></td>
+                            <td align="center"><b>32</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-13</b></td>
+                            <td align="center"><b>29</b></td>
+                            <td align="center"><b>17</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-14</b></td>
+                            <td align="center"><b>34</b></td>
+                            <td align="center"><b>22</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-15</b></td>
+                            <td align="center"><b>35</b></td>
+                            <td align="center"><b>23</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-16</b></td>
+                            <td align="center"><b>30</b></td>
+                            <td align="center"><b>18</b></td>
+                        </tr>
+                        <tr class="even">
+                           	<td align="center"><b>2013-02-17</b></td>
+                            <td align="center"><b>66</b></td>
+                            <td align="center"><b>54</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-18</b></td>
+                            <td align="center"><b>28</b></td>
+                            <td align="center"><b>16</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-19</b></td>
+                            <td align="center"><b>38</b></td>
+                            <td align="center"><b>26</b></td>
+                        </tr>
+                        <tr>
+                           	<td align="center"><b>2013-02-20</b></td>
+                            <td align="center"><b>30</b></td>
+                            <td align="center"><b>18</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-21</b></td>
+                            <td align="center"><b>22</b></td>
+                            <td align="center"><b>10</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-22</b></td>
+                            <td align="center"><b>25</b></td>
+                            <td align="center"><b>13</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-23</b></td>
+                           	<td align="center"><b>33</b></td>
+                            <td align="center"><b>21</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-24</b></td>
+                            <td align="center"><b>53</b></td>
+                            <td align="center"><b>41</b></td>
+                        </tr>
+                        <tr class="even">
+                            <td align="center"><b>2013-02-25</b></td>
+                            <td align="center"><b>28</b></td>
+                            <td align="center"><b>16</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-26</b></td>
+                            <td align="center"><b>48</b></td>
+                            <td align="center"><b>36</b></td>
+                       	</tr>
+                       	<tr class="even">
+                            <td align="center"><b>2013-02-27</b></td>
+                            <td align="center"><b>24</b></td>
+                            <td align="center"><b>12</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2013-02-28</b></td>
+                            <td align="center"><b>45</b></td>
+                            <td align="center"><b>33</b></td>
+                        </tr>
+					</tbody>
+					<tfoot>
+                        <tr>
+							<td colspan="2" align="center"><b>Jumlah Poin</b></td> 
+							<td align="center"><b>684</b></td>
+						</tr>					
+					</tfoot>
+				</table>									
+			</article>		    
+	        <div class="clear"></div>
+	    </div><!-- /content -->
+
+		<footer data-role="footer" data-position="fixed" class="ui-fixed">
+			<nav data-role="navbar">
+				<ul class="ui-alt-icon">
+					<li><a href="home" data-icon="calendar">Agenda</a></li>
+					<li><a href="Photos" data-icon="eye">Statistik</a></li>
+					<li><a href="Info" data-icon="lock">Login</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div><!-- Page Photos -->
+</body>
+</html>
