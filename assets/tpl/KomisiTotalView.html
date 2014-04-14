@@ -1,0 +1,59 @@
+
+
+				
+				<h2 class="title">Total Komisi</h2>
+                                <br />
+				<table class="table table-striped table-responsive table-bordered table-th" width="100%" >
+					<tbody>
+						<tr>
+							<th align="center">Komisi</th>
+							<th align="center">Saldo Komisi<br>(Rp.)</th>
+						</tr>
+						<tr>
+							<td>Sponsor</td>
+							<td align="right" class="kolom4"><%= (parseInt(data.bonus_sponsor_acc) - parseInt(data.bonus_sponsor_paid)) %></td>
+						</tr>
+						<tr>
+							<td>Pasangan</td>
+							<td align="right" class="kolom4"><%= (parseInt(data.bonus_match_acc) - parseInt(data.bonus_match_paid)) %></td>
+						</tr>
+						<tr>
+							<td>Generasi</td>
+							<td align="right" class="kolom4"><%
+                                                            gen_acc=parseInt(data.bonus_gen1_acc)+parseInt(data.bonus_gen2_acc)+parseInt(data.bonus_gen3_acc)+parseInt(data.bonus_gen4_acc)+parseInt(data.bonus_gen5_acc)+parseInt(data.bonus_gen6_acc)+parseInt(data.bonus_gen7_acc)+parseInt(data.bonus_gen8_acc)+parseInt(data.bonus_gen9_acc)+parseInt(data.bonus_gen10_acc);
+                                                            gen_paid=parseInt(data.bonus_gen1_paid)+parseInt(data.bonus_gen2_paid)+parseInt(data.bonus_gen3_paid)+parseInt(data.bonus_gen4_paid)+parseInt(data.bonus_gen5_paid)+parseInt(data.bonus_gen6_paid)+parseInt(data.bonus_gen7_paid)+parseInt(data.bonus_gen8_paid)+parseInt(data.bonus_gen9_paid)+parseInt(data.bonus_gen10_paid);
+                                                            %>
+                                                            <%= (gen_acc-gen_paid) %>
+                                                        </td>
+						</tr>
+						<tr>
+							<td>Viral</td>
+							<td align="right" class="kolom4">
+                                                            <%= (parseInt(data.bonus_viral_acc)-parseInt(data.bonus_viral_paid)) %>
+                                                        </td>
+						</tr>
+						<tr>
+							<td>Gen Node</td>
+							<td align="right" class="kolom4">                                                            
+                                                            <%= (parseInt(data.bonus_gen_node_acc)-parseInt(data.bonus_gen_node_paid)) %>
+
+                                                        </td>
+						</tr>
+						<tr>
+							<td>RO Viral</td>
+							<td align="right" class="kolom4">
+                                                            <%= (parseInt(data.bonus_ro_viral_acc)-parseInt(data.bonus_ro_viral_paid)) %>
+                                                        </td>
+						</tr>
+						<tr>
+							<td>RO Jaringan</td>
+							<td align="right" class="kolom4">
+                                                            <%= (parseInt(data.bonus_ro_jaringan_acc)-parseInt(data.bonus_ro_jaringan_paid)) %>
+                                                        </td>
+						</tr>
+						
+					</tbody>
+					
+				</table>
+
+																					

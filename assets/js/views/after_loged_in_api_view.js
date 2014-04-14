@@ -1,5 +1,37 @@
-window.ProfileApiView = Backbone.View.extend({
+window.Paginator = Backbone.View.extend({
+    tagName:'div',
+    className: "pagination pagination-centered",
+    initialize:function () {
+        
+      this.model.bind("reset", this.render, this);
+      this.render();
+    },
+    
+    render:function () {
+        var next_page=this.options.next_page;
+        $(this.el).html('<a href="#'+this.options.link+'/'+next_page+'">Loadmore...</a>');
 
+        return this;
+    },
+    
+    
+});
+
+window.SummaryNodeView = Backbone.View.extend({
+   tagName:'article',
+    className:'container',
+    initialize: function () {
+        this.render();
+    },
+
+    render: function () {
+        $(this.el).html(this.template(this.model.toJSON()));
+        return this;
+    }
+});    
+window.ProfileApiView = Backbone.View.extend({
+    tagName:'article',
+    className:'container',
     initialize: function () {
         this.render();
     },
@@ -10,39 +42,226 @@ window.ProfileApiView = Backbone.View.extend({
     }
 });    
 
-window.SponsorisasiApiView=Backbone.View.extend({
+window.KomisiTotalView=Backbone.View.extend({
+      tagName:'article',
+    className:'container',
     initialize:function(){
         this.render();
     },
     render:function(){
+        $(this.el).html(this.template(this.model.toJSON()));
+        return this;
+    }
+});
 
-//        $(this.el).html(this.template(new SponsorisasiApiViewTable({model:this.model,})));
-//        $(this.el).html(this.template(new SponsorisasiApiViewTable({model:this.model,})));
-//        return this;
-       // var sponsorisasi = this.model;
+window.SponsorisasiApiView=Backbone.View.extend({
+    tagName:'article',
+   // className:'container',
+    initialize:function(){
+        
+        this.data_rest=this.model.toJSON();
+        this.current_page=this.options.page ;
+        this.total_page=Math.ceil(this.data_rest.num / this.data_rest.limit);
+        this.simulate_next_page=this.current_page+this.data_rest.limit;
+        this.next_page=(this.current_page<this.data_rest.limit || this.simulate_next_page!=this.data_rest.limit)?(this.current_page+this.data_rest.limit):this.current_page;
+        //console.log('next '+ this.next_page);
+        this.model.bind("reset", this.render, this);
+
+        this.render();
+
+    },
+    render:function(){
+
         sponsorisasi=this.model.toJSON();
-        //console.log(sponsorisasi );
         var len = sponsorisasi.data.length?sponsorisasi.data.length:0;
-//        var startPos = (this.options.page - 1) * 8;
         var startPos = 0;
-        //var endPos = Math.min(startPos + 8, len);
         var endPos = len;
+        if(this.current_page==0)
+        {
+            $(this.el).html(this.template());
+            for(var i=startPos;i<endPos;i++)
+            {
+                $('table#SponsorisasiApiViewTable > tbody:last', this.el).append(new SponsorisasiApiViewTable({model: this.model,data_arr:sponsorisasi.data[i]}).render().el);
+            }
+        }
+        else
+        {
+            for(var i=startPos;i<endPos;i++)
+            {
+                $(this.el).append(new SponsorisasiApiViewTable({model: this.model,data_arr:sponsorisasi.data[i]}).render().el);
+            }
+            
+        }
+        
+       
+        if(this.simulate_next_page<this.data_rest.num)
+        {   
+            if(this.current_page==0)
+            {
+                $(this.el).append(new Paginator({model: this.model, next_page: this.next_page,total_page:this.total_page,link:'sponsorisasi'}).render().el);
+            }
+            else
+            {
+                $('.pagination').html(new Paginator({model: this.model, next_page: this.next_page,total_page:this.total_page,link:'sponsorisasi'}).render().el);
+            }
+        }
 
-       // $(this.el).html('<ul class="thumbnails"></ul>');
-        //console.log(wines);
-//        console.log(endPos);
-//        for (var i = startPos; i < endPos; i++) {
-//            $('table#SponsorisasiApiViewTable > tbody', this.el).append(new SponsorisasiApiViewTable({model: sponsorisasi[i]}).render().el);
-//        }
-//console.log(length_data.data.length);
-//console.log(sponsorisasi);
+
+        if(this.simulate_next_page>=this.data_rest.num)
+        {
+            $(".pagination").hide();
+        }
+        this.delegateEvents(this.events);
+
+        return this;
+    }
+});
+window.HistoryBonusApiView=Backbone.View.extend({
+    tagName:'article',
+   // className:'container',
+    initialize:function(){
+        
+        this.data_rest=this.model.toJSON();
+        this.current_page=this.options.page ;
+        this.total_page=Math.ceil(this.data_rest.num / this.data_rest.limit);
+        this.simulate_next_page=this.current_page+this.data_rest.limit;
+        this.next_page=(this.current_page<this.data_rest.limit || this.simulate_next_page!=this.data_rest.limit)?(this.current_page+this.data_rest.limit):this.current_page;
+        this.model.bind("reset", this.render, this);
+
+        this.render();
+
+    },
+    render:function(){
+
+        var history_bonus=this.model.toJSON();
+        var len = history_bonus.data.length?history_bonus.data.length:0;
+        var startPos = 0;
+        var endPos = len;
+        if(this.current_page==0)
+        {
+            $(this.el).html(this.template());
+            for(var i=startPos;i<endPos;i++)
+            {
+                $('table#HistoryBonusApiViewTable > tbody:last', this.el).append(new HistoryBonusApiViewTable({model: this.model,data_arr:history_bonus.data[i]}).render().el);
+            }
+        }
+        else
+        {
+            for(var i=startPos;i<endPos;i++)
+            {
+                $(this.el).append(new HistoryBonusApiViewTable({model: this.model,data_arr:history_bonus.data[i]}).render().el);
+            }
+            
+        }
+        
+       
+        if(this.simulate_next_page<this.data_rest.num)
+        {   
+            if(this.current_page==0)
+            {
+                $(this.el).append(new Paginator({model: this.model, next_page: this.next_page,total_page:this.total_page,link:'history_bonus'}).render().el);
+            }
+            else
+            {
+                $('.pagination').html(new Paginator({model: this.model, next_page: this.next_page,total_page:this.total_page,link:'history_bonus'}).render().el);
+            }
+        }
+
+
+        if(this.simulate_next_page>=this.data_rest.num)
+        {
+            $(".pagination").hide();
+        }
+        this.delegateEvents(this.events);
+
+        return this;
+    }
+});
+window.HistoryTransferApiView=Backbone.View.extend({
+    tagName:'article',
+   // className:'container',
+    initialize:function(){
+        
+        this.data_rest=this.model.toJSON();
+        this.current_page=this.options.page ;
+        this.total_page=Math.ceil(this.data_rest.num / this.data_rest.limit);
+        this.simulate_next_page=this.current_page+this.data_rest.limit;
+        this.next_page=(this.current_page<this.data_rest.limit || this.simulate_next_page!=this.data_rest.limit)?(this.current_page+this.data_rest.limit):this.current_page;
+        this.model.bind("reset", this.render, this);
+
+        this.render();
+
+    },
+    render:function(){
+
+        var history_transfer=this.model.toJSON();
+        var len = history_transfer.data.length?history_transfer.data.length:0;
+        var startPos = 0;
+        var endPos = len;
+        if(this.current_page==0)
+        {
+            $(this.el).html(this.template());
+            for(var i=startPos;i<endPos;i++)
+            {
+                $('table#HistoryTransferApiViewTable > tbody:last', this.el).append(new HistoryTransferApiViewTable({model: this.model,data_arr:history_transfer.data[i]}).render().el);
+            }
+        }
+        else
+        {
+            for(var i=startPos;i<endPos;i++)
+            {
+                $(this.el).append(new HistoryTransferApiViewTable({model: this.model,data_arr:history_transfer.data[i]}).render().el);
+            }
+            
+        }
+        
+       
+        if(this.simulate_next_page<this.data_rest.num)
+        {   
+            if(this.current_page==0)
+            {
+                $(this.el).append(new Paginator({model: this.model, next_page: this.next_page,total_page:this.total_page,link:'history_transfer'}).render().el);
+            }
+            else
+            {
+                $('.pagination').html(new Paginator({model: this.model, next_page: this.next_page,total_page:this.total_page,link:'history_transfer'}).render().el);
+            }
+        }
+
+
+        if(this.simulate_next_page>=this.data_rest.num)
+        {
+            $(".pagination").hide();
+        }
+        this.delegateEvents(this.events);
+
+        return this;
+    }
+});
+window.PoinApiView=Backbone.View.extend({
+    tagName:'article',
+    className:'container',
+    initialize:function(){
+        
+        this.model.bind("reset", this.render, this);
+
+        this.render();
+
+    },
+    render:function(){
+
+        var poin=this.model.toJSON();
+        var len = poin.data.length?poin.data.length:0;
+        var startPos = 0;
+        var endPos = len;
+        
         $(this.el).html(this.template());
         for(var i=startPos;i<endPos;i++)
         {
-            $('table#SponsorisasiApiViewTable > tbody', this.el).append(new SponsorisasiApiViewTable({model: this.model,data_arr:sponsorisasi.data[i]}).render().el);
+            $('table#PoinApiViewTable > tbody:last', this.el).append(new PoinApiViewTable({model: this.model,data_arr:poin.data[i]}).render().el);
         }
-
-       // $(this.el).append(new Paginator({model: this.model, page: this.options.page}).render().el);
+            
+        this.delegateEvents(this.events);
 
         return this;
     }
@@ -276,6 +495,57 @@ window.view_history_bonus_view=Backbone.View.extend({
 });
 
 window.SponsorisasiApiViewTable = Backbone.View.extend({
+    
+    tagName: "tr",
+
+    className: "",
+    initialize: function () {
+        this.model.bind("change", this.render, this);
+        this.model.bind("destroy", this.close, this);
+        this.render();
+    },
+
+    render: function () {
+      $(this.el).html(this.template({data_arr:this.options.data_arr}));
+      return this;
+    }
+
+});
+window.PoinApiViewTable = Backbone.View.extend({
+    
+    tagName: "tr",
+
+    className: "",
+    initialize: function () {
+        this.model.bind("change", this.render, this);
+        this.model.bind("destroy", this.close, this);
+        this.render();
+    },
+
+    render: function () {
+      $(this.el).html(this.template({data_arr:this.options.data_arr}));
+      return this;
+    }
+
+});
+window.HistoryBonusApiViewTable = Backbone.View.extend({
+    
+    tagName: "tr",
+
+    className: "",
+    initialize: function () {
+        this.model.bind("change", this.render, this);
+        this.model.bind("destroy", this.close, this);
+        this.render();
+    },
+
+    render: function () {
+      $(this.el).html(this.template({data_arr:this.options.data_arr}));
+      return this;
+    }
+
+});
+window.HistoryTransferApiViewTable = Backbone.View.extend({
     
     tagName: "tr",
 

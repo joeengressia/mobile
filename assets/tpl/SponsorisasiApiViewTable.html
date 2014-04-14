@@ -2,9 +2,9 @@
 
 
 
-				      <td align="center" width="20%"><img src="<%= data_arr.member_image==''?'images/_default.jpg':data_arr.path+data_arr.member_image %>" alt="MILAGROS"></td>
+				      <td align="center" width="20%"><img src="<%= (data_arr.member_image=='' || data_arr.member_image==null)?'images/_default.jpg':data_arr.path+data_arr.member_image %>" alt="MILAGROS"></td>
 				      <td valign="top" width="40%">
-				      	<strong><a href="index.php?do=voffice.sponsorisasi&amp;ref=GS100002"><%=data_arr.network_mid %></a></strong><br>
+				      	<strong><a href="#"><%=data_arr.network_mid %></a></strong><br>
 				      	<%=data_arr.member_name %><br>
 				      	HP: <%= data_arr.member_mobilephone %>, Daftar: <%= data_arr.member_join_datetime %>
 				      </td>

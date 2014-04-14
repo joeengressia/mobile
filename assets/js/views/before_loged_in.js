@@ -42,7 +42,7 @@ window.LoginForm = Backbone.View.extend({
             utils.displayValidationErrors(check.messages);
             return false;
         }
-        console.log(this.model._previousAttributes.network_mid);
+      //  console.log(this.model._previousAttributes.network_mid);
 //        this.saveWine();
         this.doLogin();
         
@@ -60,8 +60,10 @@ window.LoginForm = Backbone.View.extend({
             success:function(response){
                 if(response['status']!=200)
                 {
-                   utils.showAlert('', response['message'], 'alert-error'); 
-                   //console.log(response['message']);
+
+                    self.setStorage(0,0,0);
+                    utils.showAlert('', response['message'], 'alert-error'); 
+
                 }
                 else
                 {
@@ -70,12 +72,16 @@ window.LoginForm = Backbone.View.extend({
 //                    });
 
                     //console.log(response['data']['network_id']);
-                    network_id=response['data']['network_id'];
-                    network_mid=response['data']['network_mid'];
-                    token=response['data']['token'];
+                    var network_id=response['data']['network_id'];
+                    var network_mid=response['data']['network_mid'];
+                    var token=response['data']['token'];
                     self.setStorage(network_id,network_mid,token);
-
-                    //app.navigate(link_after_login,true);
+//                    utils.loadTemplate(['HomeAgenda','HomeNews','ProfileApiView',
+//                    'SponsorisasiApiView','SponsorisasiApiViewTable','KomisiTotalView', 'SummaryNodeView'], function() {
+//    
+//    
+//                    });
+                    app.navigate(_LINK_AFTER_LOGIN,true);
                 }
             },
             error:function(){
@@ -92,13 +98,47 @@ window.LoginForm = Backbone.View.extend({
         }
         return false;
     },
-    setStorage:function(network_id,network_mid,token){
-         localStorage.setItem("network_id", network_id);
-         localStorage.setItem("network_mid", network_mid);
-         localStorage.setItem("token", token);
-
+    setStorage:function(network_id_value,network_mid_value,token_value){
+    //     localStorage.setItem("network_id", network_id);
+      //   localStorage.setItem("network_mid", network_mid);
+        // localStorage.setItem("token", token);
+            //var self=this;
+           // var fc = new FormCollection();
+           //fc.create({id:1});
+//            var save_data = fc.create({
+//               // "id": 1,
+//                "network_id": network_id_value,
+//                "token": token_value,
+//                "network_mid": network_mid_value,
+//
+//           });
+           
+//           fc.fetch();
+//           
+//           fc.add({"id": 1,
+//                "network_id": network_id_value,
+//                "token": token_value,
+//                "network_mid": network_mid_value,});
+//            fc.fetch();
+//
+            var post_data={"id": 1,
+                "network_id": network_id_value,
+                "token": token_value,
+                "network_mid": network_mid_value,};
+            this.model.save(post_data,{
+                success:function(model){
+                 //   self.render();
+                    //console.log(JSON.stringify(model));
+                    //fc.fetch();
+                   // new FormCollection({'model':model});
+                    //console.log('id: '+model.id);
+                    //this.model.fetch();
+                    //self.render();
+                }
+            });
+           
     },
-
+    
 //    saveWine: function () {
 //        var self = this;
 //        this.model.save(null, {
