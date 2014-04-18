@@ -17,6 +17,19 @@ window.Paginator = Backbone.View.extend({
     
 });
 
+ 
+window.StatistikView = Backbone.View.extend({
+   tagName:'article',
+    className:'container',
+    initialize: function () {
+        this.render();
+    },
+
+    render: function () {
+        $(this.el).html(this.template());
+        return this;
+    }
+});    
 window.SummaryNodeView = Backbone.View.extend({
    tagName:'article',
     className:'container',

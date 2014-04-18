@@ -25,7 +25,6 @@ window.LoginForm = Backbone.View.extend({
         var change = {};
         change[target.name] = target.value;
         this.model.set(change);
-
         // Run validation rule (if any) on changed item
         var check = this.model.validateItem(target.id);
         if (check.isValid === false) {
@@ -50,13 +49,36 @@ window.LoginForm = Backbone.View.extend({
     },
     doLogin:function(){
         var self=this;
-        
-        //self.render();
+//         $.get(_API_SERVER_URL+'api_client/ui_interface/test_jsonp?jsoncallback=?',function(data){
+////                   console.log(data);
+//             //     alert(data);
+//                console.log(data);
+//               },'json');
+//        $.ajax({
+//            dataType:'jsonp',
+//            type:'get',
+//          //  url:_API_SERVER_URL+'api_client/ui_interface/test_jsonp?jsoncallback=?&network_mid=GS100001&password=GS100001',
+//            //url:_API_SERVER_URL+'api_client/ui_interface/call_api/view_member_login?jsoncallback=?&network_mid='+this.model._previousAttributes.network_mid+'&password='+this.model._previousAttributes.password,
+//            url:_API_SERVER_URL+'api_client/ui_interface/call_api/view_member_login?jsoncallback=?&network_mid='+this.model._previousAttributes.network_mid+'&password='+this.model._previousAttributes.password,
+//            success:function(response){
+//                console.log(response);
+//                console.log(this.model.urlRoot);
+//                console.log(response['status']);
+//            },
+//            error:function(response,method,thrown){
+//               console.log(method);
+//              
+//            }
+//        });        
+//               
+               
         $.ajax({
+           // contentType : "application/json",
             dataType:'json',
-            type:'post',
-            url:this.model.urlRoot,
-            data:{network_mid:this.model._previousAttributes.network_mid,password:this.model._previousAttributes.password},
+            type:'get',
+            //url:this.model.urlRoot,
+            url:this.model.urlRoot+'?jsoncallback=?&network_mid='+this.model._previousAttributes.network_mid+'&password='+this.model._previousAttributes.password,
+           // data:{network_mid:this.model._previousAttributes.network_mid,password:this.model._previousAttributes.password},
             success:function(response){
                 if(response['status']!=200)
                 {
@@ -84,7 +106,8 @@ window.LoginForm = Backbone.View.extend({
                     app.navigate(_LINK_AFTER_LOGIN,true);
                 }
             },
-            error:function(){
+            error:function(response,method,thrown){
+              
                 utils.showAlert('Error', 'An error occurred while trying to log in', 'alert-error');
             }
         });
@@ -162,7 +185,7 @@ window.MenuBeforeLogedIn= Backbone.View.extend({
           this.render();  
         },
         render:function(){
-        $("#menu ul").append(this.template()); 
+        $("#menu ul").html(this.template()); 
            
         },
         selectMenuItem: function (menuItem) {
@@ -173,23 +196,26 @@ window.MenuBeforeLogedIn= Backbone.View.extend({
     }
 });
 window.MenuAfterLogedIn= Backbone.View.extend({
-
         initialize:function(){
-
           this.render();  
         },
         render:function(){
-//          $(this.el).html(this.template());  
-         $('.nav-list').append(this.template()); 
+        $("#menu ul").html(this.template()); 
+           
         },
+        selectMenuItem: function (menuItem) {
+        $('.nav li').removeClass('active');
+        if (menuItem) {
+            $('.' + menuItem).addClass('active');
+        }
+    }
 });
 
 window.HomeNews=Backbone.View.extend({
         initialize:function(){
         },
       render: function () {
-                    console.log(this.el);
-
+       
         $(this.el).html(this.template());       
        return this;
         },

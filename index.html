@@ -98,8 +98,9 @@
 			<nav data-role="navbar">
 				<ul class="ui-alt-icon">
 					<li><a href="index.html#"  onclick="window.location.href='index.html#'" data-icon="home">Home</a></li>
-					<li><a href="Photos" data-icon="eye">Statistik</a></li>
-					<li><a href="index.html#login" onclick="window.location.href='index.html#login'" data-icon="lock">Login</a></li>
+					<li><a href="index.html#statistik" data-icon="eye">Statistik</a></li>
+					<li id="dock_login"><a href="index.html#login" onclick="window.location.href='index.html#login'" data-icon="lock">Login</a></li>
+					<!--<li id="dock_logout"><a href="index.html#logout" onclick="return confirm('Are you sure want to logout?');" data-icon="lock">Logout</a></li>-->
 				</ul>
 			</nav>
 		</footer>
@@ -107,7 +108,8 @@
         
         <script type="text/javascript">
             var _BASE_URL='http://localhost/esoftdream/milagros_mobile_client/';
-            var _API_SERVER_URL='http://localhost/esoftdream/milagros_api/';
+           // var _API_SERVER_URL='http://localhost/esoftdream/milagros_api/';
+            var _API_SERVER_URL='http://192.168.1.101/mobile/milagros_api/';
             var output_content=$("#backbone_body");
             var _LINK_AFTER_LOGIN='profile_detail';
 
@@ -120,7 +122,7 @@
                 * Store a version of Backbone.sync to call from the
                 * modified version we create
                 */
-
+  
                
                
    </script>
@@ -173,12 +175,11 @@
         //$('#loading_backbone').ajaxComplete(function(){ $(this) .fadeOut(); });
         
         $(function(){
-           // $("#loading_backbone").spin().hide();
-            $('#loading_backbone').ajaxStart(function(){
-               // e.preventDefault();
-                //$("backbone_content").html('');
-                $(this).fadeIn(); });
-            $('#loading_backbone').ajaxComplete(function(){ $(this).fadeOut(); });
+              $(document).ready(function() {
+                    $('#loading_backbone').ajaxStart(function(){
+                        $(this).fadeIn(); });
+                    $('#loading_backbone').ajaxComplete(function(){ $(this).fadeOut(); });
+              });
         });
         
         //var spinner = new Spinner(opts).spin();

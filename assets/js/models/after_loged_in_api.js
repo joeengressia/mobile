@@ -1,6 +1,5 @@
 window.SummaryNodeApi= Backbone.Model.extend({
-   // urlRoot:_API_SERVER_URL+"api_client/ui_interface/call_api/view_summary_node?token="+localStorage.getItem('token')+'&network_id='+localStorage.getItem('network_id'),
-     url: function(){
+    url: function(){
     return this.instanceUrl;
   },
     initialize:function(props){
